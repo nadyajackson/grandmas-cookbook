@@ -1,26 +1,308 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+*{
+  background-color: #fffdd0;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.italic{
+  font-style: italic;
 }
-
-* {
-  box-sizing: border-box;
+.bold{
+  font-weight: bold;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media only screen and (min-width: 320px){
+  .header{
+      background-color: seashell;
+      text-align: center;
+      padding: 5px;
+      border: black solid 2px;
+      margin: 10px;
   }
-  body {
-    color: white;
-    background: black;
+  .header h1, 
+  .header h4{
+      background-color: seashell;
+      font-family: 'Galada', cursive;
   }
+  .navbar{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      position: sticky;
+      top: 0;
+      padding: 15px;
+  }
+  .navbar a{
+      padding: 4px;
+      border: solid 2px black;
+      text-decoration: none;
+      color:black;
+  }
+  .navbar a:hover{
+      background-color: pink;
+  }
+  .navbar a:visited{
+      color: salmon
+  }
+  .advert{
+      text-align: center;
+      font-family: 'Amatic SC', cursive;
+      overflow:auto;
+      margin-top: 10px;
+  }
+  #sale{
+      text-decoration: double underline;
+      color: red;
+  }
+  .testimonies{
+      background-color: seashell;
+      border: black solid 5px;
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+      font-family: 'Galada', cursive;
+  }
+  #bday{
+      width: 400px;
+  }
+  #cousin{
+      width: 400px;
+  }
+  table{
+      text-align: center;
+      border-collapse: collapse;
+      margin: auto;
+  }
+  th, td{
+      border: black solid 2px;
+      padding: 5px;
+  }
+  footer{
+      border: solid black 2px;
+      margin: 10px;
+      margin-top: 25px;
+      background-color: seashell;
+      padding: 5px;
+  }
+  footer p{
+      background-color: seashell;
+  }
+  #cookbookAd{
+      text-align: center;
+  }
+  #cookbookAd a{
+      background-color: seashell;
+  }
+  #contact span{
+      background-color: seashell;
+  }
+  #contact{
+      text-align: right;
+  }
+  .flexbox{
+      text-align: center;
+  }
+
+  .flexbox li{
+      list-style: inside;
+  }
+
+  #one{
+      border: solid;
+      margin: 15px;
+  }
+  #two{
+      border: solid;
+      margin: 15px;
+  }
+  #three{
+      border: solid;
+      margin: 15px;
+  }
+  #four{
+      border: solid;
+      margin: 15px;
+  }
+  #five{
+      border: solid;
+      margin: 15px;
+  }
+  .gallery{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .gallery img{
+      width:200px;
+      border: dashed 5px pink;
+      margin: 10px;
+  }
+  #Jcookie{
+      width: 200px;
+  }
+  #Icing{
+      width: 200px;
+  }
+  #SecretIngredient{
+      width: 200px;
+  }
+  .dedication h1{
+      font-family: 'Galada', cursive;
+      text-align: center;
+  }
+  .dedication{
+      text-align: center;
+  }
+  .grid{
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      align-items: center;
+  }
+ .gallery2 img{
+  width: 300px;
+  margin: 15px;
+  border: solid black;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .navbar{
+      display: flex;
+      justify-content: center;
+  }
+  .navbar a{
+      margin-right: 15px;
+  }
+  #cookbook{
+    width: 200px;
+    height:200px;
+    margin-top: 20px;
+    position: absolute;
+    right: calc(100% + 150px);
+  }
+  .header{
+    height:250px;
+  }
+  .header span{
+    position: relative;
+  }
+  .header span h1{
+    padding-top: 50px;
+  }
+  .testimonies{
+      width: 500px;
+  }
+  .testimonies{
+      padding: 25px;
+  }
+  #bday{
+      float: left;
+      width: 500px;
+      height: 300px;
+      margin-left: 10%;
+  }
+  #cousin{
+      float: right;
+      width: 500px;
+      height: 300px;
+      margin-right: 10%;
+  }
+  .flexbox{
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+
+  }
+  .flexbox h3{
+      font-size: 25px;
+      text-decoration: underline;
+  }
+  .gallery{
+      flex-direction: row;
+  }
+  .gallery img{
+      width: 400px;
+  }
+  #Jcookie{
+      float: left;
+  }
+  #Icing{
+      float: left;
+  }
+  #SecretIngredient{
+      float: left;
+  }
+  .dedication{
+      text-align: center;
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .grid{
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      align-items: center;
+  }
+  .gallery2{
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      align-items: center;
+  }
+  #text1, #text2, #text3, #text4{
+      display: none;
+  }
+
+  #Grandparents:hover + #text1{
+       display: block;
+      font-family: 'Amatic SC', cursive;
+  }
+  #Family2017:hover + #text2{
+      display: block;
+     font-family: 'Amatic SC', cursive;
+ }
+  #Easter:hover + #text3{
+       display: block;
+      font-family: 'Amatic SC', cursive;
+  }
+  #Dad:hover + #text4{
+      display: block;
+     font-family: 'Amatic SC', cursive;
+ }
+}
+@media only screen and (min-width: 1024px) {
+    #floatright{
+        display: grid;
+        place-items:  center;
+        grid-template-columns: auto auto;
+        grid-template-rows: 120px 180px ;
+        margin-top: 50px;
+    }
+    #floatright p{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #floatright Image{
+        grid-column: 2/3;
+        grid-row:1/4;
+    }
+    #floatleft{
+        display: grid;
+        place-items:  center;
+        grid-template-columns: auto auto;
+        grid-template-rows: 120px 180px 
+    }
+    #floatleft p{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #floatleft Image{
+        grid-column: 1/2;
+        grid-row:1/4;
+    }
+    #legacy{
+        justify-content: center;
+    }
 }
