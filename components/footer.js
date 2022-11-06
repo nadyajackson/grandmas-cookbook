@@ -1,9 +1,9 @@
 import Link from 'next/link'
 export default function Footer () {
     return(
-       <div>
+       <div className="footer">
         <p className="cookbookAd">
-            For more recipes order the cookbook <Link href="#">here</Link>
+            For more recipes order the cookbook <Link href="#" style={{background:"seashell"}}>here</Link>.
         </p>
         <p className="contact">
             <span className="bold">Contact</span> 

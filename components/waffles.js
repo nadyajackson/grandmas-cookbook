@@ -1,9 +1,9 @@
 import Image from 'next/image'
 export default function Waffles () {
     return(
-        <div id="four">
+        <div id="recipeBox">
                 <h3>Waffles</h3>
-                <p><span class="bold">Supplies</span></p>
+                <p><span className="bold">Supplies</span></p>
                 <ul>
                     <li>Big Bowl</li>
                     <li>Two Smaller Bowls</li>
@@ -16,7 +16,7 @@ export default function Waffles () {
                     <li>Egg Seperator</li>
                     <li>A lot of Time</li>
                 </ul>
-                <p><span class="bold">Ingredients</span></p>
+                <p><span className="bold">Ingredients</span></p>
                 <ul>
                     <li>2 Eggs</li>
                     <li>1 1/2 Cups All-Purpose Flour</li>
@@ -29,14 +29,16 @@ export default function Waffles () {
                     <li>2 tsp Vanilla</li>
                     <li>1 tsp White Vinegar</li>
                     <li>2 tbsp Sugar</li>
-                    <li>1/2 cup club soda <span class="italic">Chilled</span></li>
+                    <li>1/2 cup club soda <span className="italic">Chilled</span></li>
                 </ul>
                 <Image 
                     src="/NancyPhotos/SecretIngredient.jpg" 
+                    alt='Club Soda'
                     id="SecretIngredient"
                     width="500"
-                    height="300"/>
-                <p><span class="bold">Instructions</span></p>
+                    height="300"
+                    />
+                <p><span className="bold">Instructions</span></p>
                 <ol>
                     <li>Seperate Eggs. Put egg whites in a small bowl at room temp. for 30 minutes. Put egg yolks to side in the <i>Big</i> bowl</li>
                     <li>While Waiting...In the second small bowl mix Flour, Cornstartch, Baking Powder, Baking Soda and salt.</li>

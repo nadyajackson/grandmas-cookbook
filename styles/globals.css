@@ -1,6 +1,15 @@
 *{
   background-color: #fffdd0;
 }
+@font-face {
+    font-family: 'Galada';
+    src: url(../public/Galada/Galada-Regular.ttf);
+}
+@font-face {
+    font-family: 'Amatic SC' ;
+    src: url(../public/AmaticSC/AmaticSC-Bold.ttf);
+    src: url(../public/AmaticSC/AmaticSC-Regular.ttf);
+}
 .italic{
   font-style: italic;
 }
@@ -8,6 +17,10 @@
   font-weight: bold;
 }
 @media only screen and (min-width: 320px){
+    #free{
+        font-family: 'Galada', cursive;
+        text-align: center;
+    }
   .header{
       background-color: seashell;
       text-align: center;
@@ -59,10 +72,12 @@
       font-family: 'Galada', cursive;
   }
   #bday{
-      width: 400px;
+      width: 300px;
+      height: 200px;
   }
   #cousin{
-      width: 400px;
+      width: 300px;
+      height: 200px;
   }
   table{
       text-align: center;
@@ -73,15 +88,18 @@
       border: black solid 2px;
       padding: 5px;
   }
-  footer{
+  .footer{
       border: solid black 2px;
       margin: 10px;
       margin-top: 25px;
       background-color: seashell;
       padding: 5px;
   }
-  footer p{
+  .footer p, .bold{
       background-color: seashell;
+  }
+  .cookbookAd {
+    background-color: seashell;
   }
   #cookbookAd{
       text-align: center;
@@ -94,35 +112,20 @@
   }
   #contact{
       text-align: right;
-  }
-  .flexbox{
-      text-align: center;
-  }
+  } 
 
   .flexbox li{
       list-style: inside;
   }
-
-  #one{
+  #recipeBox{
       border: solid;
       margin: 15px;
+      padding: 10px;
   }
-  #two{
-      border: solid;
-      margin: 15px;
+  #recipeBox .bold{
+    background-color:#fffdd0;
   }
-  #three{
-      border: solid;
-      margin: 15px;
-  }
-  #four{
-      border: solid;
-      margin: 15px;
-  }
-  #five{
-      border: solid;
-      margin: 15px;
-  }
+ 
   .gallery{
       display: flex;
       flex-direction: column;
@@ -132,16 +135,17 @@
   .gallery img{
       width:200px;
       border: dashed 5px pink;
-      margin: 10px;
+      margin: 15px;
   }
   #Jcookie{
       width: 200px;
   }
   #Icing{
-      width: 200px;
+      width: 250px;
   }
   #SecretIngredient{
       width: 200px;
+      margin-left: 25px;
   }
   .dedication h1{
       font-family: 'Galada', cursive;
@@ -156,14 +160,23 @@
       justify-content: center;
       align-items: center;
   }
+  .gallery2{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: x-large;
+  }
  .gallery2 img{
-  width: 300px;
+  width: 275px;
+  height: 275px;
   margin: 15px;
   border: solid black;
   }
 }
 
 @media only screen and (min-width: 768px){
+    #free{
+        font-size: 50px
+    }
   .navbar{
       display: flex;
       justify-content: center;
@@ -188,27 +201,29 @@
     padding-top: 50px;
   }
   .testimonies{
-      width: 500px;
-  }
-  .testimonies{
+      width: 400px;
       padding: 25px;
   }
+  
   #bday{
-      float: left;
-      width: 500px;
+      width: 400px;
       height: 300px;
-      margin-left: 10%;
   }
   #cousin{
-      float: right;
-      width: 500px;
+      width: 400px;
       height: 300px;
-      margin-right: 10%;
+  }
+  #floatright{
+    display: flex;
+    align-items: center;
+
+  }
+  #floatleft{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
   }
   .flexbox{
-      width: 800px;
-      display: flex;
-      flex-direction: column;
       margin: auto;
 
   }
@@ -220,24 +235,32 @@
       flex-direction: row;
   }
   .gallery img{
-      width: 400px;
+      width: 200px;
+      height: 200px;
   }
   #Jcookie{
-      float: left;
+    float: right;
+    margin-right: 80px;
   }
   #Icing{
-      float: left;
+      float: right;
+      margin-right: 60px;
+      width: 300px;
   }
   #SecretIngredient{
-      float: left;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-left: 10px;
+    top:-20px
+    
   }
   .dedication{
       text-align: center;
-      width: 800px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding:20px;
+  }
+  .dedication h1{
+    font-size: 50px
   }
   .grid{
       display: grid;
@@ -250,27 +273,17 @@
       grid-template-columns: auto auto;
       justify-content: center;
       align-items: center;
-  }
-  #text1, #text2, #text3, #text4{
-      display: none;
-  }
-
-  #Grandparents:hover + #text1{
-       display: block;
       font-family: 'Amatic SC', cursive;
+      font-size: x-large;
   }
-  #Family2017:hover + #text2{
-      display: block;
-     font-family: 'Amatic SC', cursive;
- }
-  #Easter:hover + #text3{
-       display: block;
-      font-family: 'Amatic SC', cursive;
+  .gallery2 img{
+    height: 300px;
+    width: 300px;
   }
-  #Dad:hover + #text4{
-      display: block;
-     font-family: 'Amatic SC', cursive;
- }
+  #legacy{
+    display: flex;
+    justify-content: center;
+   }
 }
 @media only screen and (min-width: 1024px) {
     #floatright{
@@ -302,7 +315,47 @@
         grid-column: 1/2;
         grid-row:1/4;
     }
-    #legacy{
+   
+   .gallery img{
+    width: 300px;
+    height: 300px;
+    }
+    .flexbox{
+        display: grid;
+        grid-template-columns: 500px 500px;
         justify-content: center;
+    }
+    #Icing{
+        float: none;
+        margin-right: 60px;
+        width: 300px;
+    }
+    #Jcookie{
+      margin-right: 50px;
+      }
+      #SecretIngredient{
+        top:0px;
+      }    
+      .gallery2 img{
+        height: 400px;
+        width: 400px;
+      }
+    .dedication{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dedication p{
+        width: 700px;
+    }
+    .advert{
+        font-size: larger;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .flexbox{
+        display: grid;
+        grid-template-columns: 700px 700px
     }
 }

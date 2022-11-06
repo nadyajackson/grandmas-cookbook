@@ -4,7 +4,7 @@ export default function Samples () {
         <table>
             <thead>
                 <tr>
-                    <th colspan="2">All of These and MORE!!</th>
+                    <th colSpan="2">All of These and MORE!!</th>
                 </tr>
                 <tr>
                     <th>Recipe</th>

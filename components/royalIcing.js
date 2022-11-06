@@ -1,22 +1,24 @@
 import Image from "next/image"
 export default function Icing () {
     return(
-        <div id="three">
+        <div id="recipeBox">
         <h3>Royal Icing</h3>
         <Image 
             src="/NancyPhotos/Icing.jpg" 
+            alt="Four different size bowls full of icing colored green, pink, yellow, blue"
             id="Icing"
             width="500"
-            height="300"/>
-        <p><span class="bold">Supplies</span></p>
+            height="300"
+            />
+        <p><span className="bold">Supplies</span></p>
         <ul>
             <li>Cookies or (Cup)cakes</li>
             <li>Butter knife or Icing Spreader</li>
             <li>Bowls</li>
             <li>Spoons</li>
-            <li>Paitence</li>
+            <li>Patience</li>
         </ul>
-        <p><span class="bold">Ingredients</span></p>
+        <p><span className="bold">Ingredients</span></p>
         <ul>
             <li>Powdered Sugar</li>
             <li>Shortening</li>
@@ -26,7 +28,7 @@ export default function Icing () {
             <li>Food Coloring</li>
             <li>Grandma's Intuition</li>
         </ul>
-        <p><span class="bold">Instructions</span></p>
+        <p><span className="bold">Instructions</span></p>
         <ol>
             <li>Add equal parts Shortening and Powdered Sugar.</li>
                 <ul>
@@ -44,7 +46,7 @@ export default function Icing () {
                 <li>Solid thickness for cakes</li>
             </ul>
             <li>Split into other bowls and add food coloring as desired</li>
-            <li>Put on <span class="bold">COOLED</span> cookies or cakes</li>
+            <li>Put on <span className="bold">COOLED</span> cookies or cakes</li>
         </ol>
     </div>
     )
