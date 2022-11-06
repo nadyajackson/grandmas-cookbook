@@ -38,7 +38,7 @@ export default function Sugar () {
                     <li>Add Egg and Blend</li>
                     <li>Pour in Milk and Vanilla, mix with whisk </li>
                     <ul>
-                        <li>We're done with the whisk.</li>
+                        <li>We&#39;re done with the whisk.</li>
                         <li>Use a sturdy spoon now</li>
                         <li>If you try to use the whisk on the flour you WILL regret it.</li>
                     </ul>

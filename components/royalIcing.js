@@ -26,7 +26,7 @@ export default function Icing () {
             <li>Vanilla</li>
             <li>Milk</li>
             <li>Food Coloring</li>
-            <li>Grandma's Intuition</li>
+            <li>Grandma&#39;s Intuition</li>
         </ul>
         <p><span className="bold">Instructions</span></p>
         <ol>

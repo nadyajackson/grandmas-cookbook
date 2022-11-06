@@ -10,7 +10,7 @@ export default function Header () {
                 width="150"
                 height="150"
                 alt="cookbook line art with spoon and measuring cup"/>
-            <h1>Just like Grandma's</h1>
+            <h1>Just like Grandma&#39;s</h1>
             <h4>Tastes like going home.</h4>
             </span>
         </div>
